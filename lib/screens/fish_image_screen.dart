@@ -43,7 +43,7 @@ class _PhotoWatcherState extends State<PhotoWatcher> {
   }
 
   void _processNewFile(String filePath) {
-    print('New file added: $filePath');
+    debugPrint('New file added: $filePath');
     Get.find<MyCameraController>().getAutoResult(filePath);
   }
 
